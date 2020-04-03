@@ -2,14 +2,87 @@
 <html>
   <head>
     <title>Banachewicz.pl</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bartosz Banachewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/f30186a5a4.js" crossorigin="anonymous"></script>
+
     <style>
+      :root {
+        --color-bg: #F2F2F2;
+        --color-accent: #262626;
+        --color-main: #4D578C;
+        --color-main-dark: #4E5BA6;
+        --color-main-light: #8F97BF;
+      }
+
+      * { 
+        color: white;
+        font-family: Helvetica;
+      }
       body {
-        background-color: #ccc;
+        background-color: var(--color-bg);
+      }
+      h1 {
+        border-bottom: 8px solid var(--color-accent);
+      }
+      div#content {
+        width: 1024px;
+        background-color: var(--color-main);
+        /*box-shadow: 0px 0px 132px 20px rgba(0,0,0,0.75);*/
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 20px;
         padding: 20px;
+        min-height: 50vh;
+
+        position: relative;
+      }
+
+      div#linkbox {
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+      }
+
+      .accent {
+        background-color: var(--color-accent) !important;
+      }
+
+      div#linkbox > * {
+        width: 70px;
+        height: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        margin-right: 10px;
+
+        background-color: var(--color-main-light);
       }
     </style>
+
   </head>
   <body>
-    <h1>Bartosz Banachewicz</h1>
+
+    <div id="content">
+      <h1>Bartosz Banachewicz</h1>
+      <h2>Software Engineer</h2>
+      <span><i class="fas fa-map-marker-alt"></i> Gdynia, Poland</span>
+
+      <div id="linkbox">
+        <a href="https://stackoverflow.com/users/752976/bartek-banachewicz"><i class="fab fa-stack-overflow fa-3x"></i></a>
+        <a href="https://github.com/bananu7"><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://pl.linkedin.com/in/bartoszbanachewicz"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://twitter.com/bananu7"><i class="fab fa-twitter-square fa-3x"></i></a>
+        <a href="https://www.codementor.io/@bananu7">CM</a>
+        <a href="https://drive.google.com/file/d/1yxaAWCoitgsJ0VaS7pvrtrW1mh9U2kSj/view" class="accent">CV</a>
+      </div>
+
+      <br>
+    <div>
   </body>
 </html>
